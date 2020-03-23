@@ -19,7 +19,7 @@ mongoose.connect('mongodb://localhost/fitness-app-dev', {
         console.log("error db", error)
     })
 
-    hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(__dirname + '/views/partials');
 
 //middelware
 app.use("/", require("./routes/index"));
